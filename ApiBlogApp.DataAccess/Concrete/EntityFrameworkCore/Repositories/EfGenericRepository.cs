@@ -35,6 +35,12 @@ namespace ApiBlogApp.DataAccess.Concrete.EntityFrameworkCore.Repositories
             return await context.Set<TEntity>().Where(filter).SingleOrDefaultAsync();
         }
 
+        public async Task<TEntity> FindByIdAsync(int id)
+        {
+            await using var context = new ApiBlogAppContext();
+            return await context.FindAsync<TEntity>(id);
+        }
+
         public async Task AddAsync(TEntity entity)
         {
             await using var context = new ApiBlogAppContext();

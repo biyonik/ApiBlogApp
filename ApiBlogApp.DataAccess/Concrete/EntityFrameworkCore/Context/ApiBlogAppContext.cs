@@ -1,4 +1,5 @@
-﻿using ApiBlogApp.Entities.Concrete;
+﻿using ApiBlogApp.DataAccess.Concrete.EntityFrameworkCore.Mappings;
+using ApiBlogApp.Entities.Concrete;
 using Microsoft.EntityFrameworkCore;
 
 namespace ApiBlogApp.DataAccess.Concrete.EntityFrameworkCore.Context
@@ -8,7 +9,16 @@ namespace ApiBlogApp.DataAccess.Concrete.EntityFrameworkCore.Context
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer(
-                "Server=(localdb)\\mssqllocaldb;Database=ApiBlogAppDb;Integrated Security=true");
+                "Server=DESKTOP-NOOAEV8\\SQLEXPRESS;Database=ApiBlogAppDb;Integrated Security=true");
+        }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.ApplyConfiguration(new AppUserMap());
+            modelBuilder.ApplyConfiguration(new CategoryMap());
+            modelBuilder.ApplyConfiguration(new BlogMap());
+            modelBuilder.ApplyConfiguration(new CategoryBlogMap());
+            modelBuilder.ApplyConfiguration(new CommentMap());
         }
 
         public DbSet<AppUser> AppUsers { get; set; }

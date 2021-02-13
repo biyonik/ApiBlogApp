@@ -12,6 +12,7 @@ namespace ApiBlogApp.DataAccess.Abstract.Base
         Task<IList<TEntity>> GetAllAsync<TKey>(Expression<Func<TEntity, TKey>> keySelector,
             Expression<Func<TEntity, bool>> filter = null);
         Task<TEntity> GetAsync(Expression<Func<TEntity, bool>> filter);
+        Task<TEntity> FindByIdAsync(int id);
         Task AddAsync(TEntity entity);
         Task UpdateAsync(TEntity entity);
         Task RemoveAsync(TEntity entity);
