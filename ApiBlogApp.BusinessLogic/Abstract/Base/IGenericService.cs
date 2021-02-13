@@ -1,10 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq.Expressions;
+﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using ApiBlogApp.Entities.Abstract;
 
-namespace ApiBlogApp.BusinessLogic.Abstract
+namespace ApiBlogApp.BusinessLogic.Abstract.Base
 {
     public interface IGenericService<TEntity> where TEntity:class, IEntity, new()
     {

@@ -8,7 +8,7 @@ using ApiBlogApp.DataAccess.Concrete.EntityFrameworkCore.Context;
 using ApiBlogApp.Entities.Abstract;
 using Microsoft.EntityFrameworkCore;
 
-namespace ApiBlogApp.DataAccess.Concrete.EntityFrameworkCore.Repositories
+namespace ApiBlogApp.DataAccess.Concrete.EntityFrameworkCore.Repositories.Base
 {
     public class EfGenericRepository<TEntity>: IGenericRepositoryDal<TEntity> where TEntity : class, IEntity, new()
     {

@@ -1,7 +1,10 @@
 ﻿using ApiBlogApp.BusinessLogic.Abstract;
+using ApiBlogApp.BusinessLogic.Abstract.Base;
 using ApiBlogApp.BusinessLogic.Concrete;
+using ApiBlogApp.BusinessLogic.Concrete.Base;
 using ApiBlogApp.DataAccess.Abstract.Base;
 using ApiBlogApp.DataAccess.Concrete.EntityFrameworkCore.Repositories;
+using ApiBlogApp.DataAccess.Concrete.EntityFrameworkCore.Repositories.Base;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace ApiBlogApp.BusinessLogic.Containers.Microsoft

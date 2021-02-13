@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq.Expressions;
+﻿using System.Collections.Generic;
 using System.Threading.Tasks;
-using ApiBlogApp.BusinessLogic.Abstract;
+using ApiBlogApp.BusinessLogic.Abstract.Base;
 using ApiBlogApp.DataAccess.Abstract.Base;
 using ApiBlogApp.Entities.Abstract;
 
-namespace ApiBlogApp.BusinessLogic.Concrete
+namespace ApiBlogApp.BusinessLogic.Concrete.Base
 {
     public class GenericManager<TEntity>:IGenericService<TEntity> where TEntity : class, IEntity, new()
     {
