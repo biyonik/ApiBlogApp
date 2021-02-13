@@ -32,7 +32,7 @@ namespace ApiBlogApp.DataAccess.Concrete.EntityFrameworkCore.Repositories.Base
         public async Task<TEntity> GetAsync(Expression<Func<TEntity, bool>> filter)
         {
             await using var context = new ApiBlogAppContext();
-            return await context.Set<TEntity>().Where(filter).SingleOrDefaultAsync();
+            return await context.Set<TEntity>().Where(filter).FirstOrDefaultAsync();
         }
 
         public async Task<TEntity> FindByIdAsync(int id)

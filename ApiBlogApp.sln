@@ -6,6 +6,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiBlogApp.DataAccess", "Ap
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiBlogApp.BusinessLogic", "ApiBlogApp.BusinessLogic\ApiBlogApp.BusinessLogic.csproj", "{22809EF0-D94B-4FAD-B3C1-466600289C09}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiBlogApp.WebAPI", "ApiBlogApp.WebAPI\ApiBlogApp.WebAPI.csproj", "{0CB5828E-B14C-40A8-860D-F32253EE70D7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiBlogApp.DataTransformationObjects", "ApiBlogApp.DataTransformationObjects\ApiBlogApp.DataTransformationObjects.csproj", "{55306E9F-30B8-40BF-8FD1-21944F52EF84}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,5 +27,13 @@ Global
 		{22809EF0-D94B-4FAD-B3C1-466600289C09}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{22809EF0-D94B-4FAD-B3C1-466600289C09}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{22809EF0-D94B-4FAD-B3C1-466600289C09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0CB5828E-B14C-40A8-860D-F32253EE70D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CB5828E-B14C-40A8-860D-F32253EE70D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CB5828E-B14C-40A8-860D-F32253EE70D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CB5828E-B14C-40A8-860D-F32253EE70D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55306E9F-30B8-40BF-8FD1-21944F52EF84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55306E9F-30B8-40BF-8FD1-21944F52EF84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55306E9F-30B8-40BF-8FD1-21944F52EF84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55306E9F-30B8-40BF-8FD1-21944F52EF84}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
