@@ -1,4 +1,5 @@
-﻿using ApiBlogApp.Entities.Abstract;
+﻿using System.Collections.Generic;
+using ApiBlogApp.Entities.Abstract;
 
 namespace ApiBlogApp.Entities.Concrete
 {
@@ -6,5 +7,7 @@ namespace ApiBlogApp.Entities.Concrete
     {
         public int Id { get; set; }
         public string Name { get; set; }
+
+        public List<Blog> Blogs { get; set; }
     }
 }

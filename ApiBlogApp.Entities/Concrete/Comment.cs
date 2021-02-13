@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using ApiBlogApp.Entities.Abstract;
 
 namespace ApiBlogApp.Entities.Concrete
@@ -10,5 +11,9 @@ namespace ApiBlogApp.Entities.Concrete
         public string AuthorName { get; set; }
         public string AuthorEmail { get; set; }
         public DateTime PostedTime { get; set; }
+
+        public int? ParentCommentId { get; set; }
+        public virtual Comment ParentComment { get; set; }
+        public List<Comment> SubComments { get; set; }
     }
 }

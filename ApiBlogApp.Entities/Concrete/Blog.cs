@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using ApiBlogApp.Entities.Abstract;
 
 namespace ApiBlogApp.Entities.Concrete
@@ -10,5 +11,9 @@ namespace ApiBlogApp.Entities.Concrete
         public string ShortDescription { get; set; }
         public string Content { get; set; }
         public DateTime PostedTime { get; set; }
+
+        public List<Category> Categories { get; set; }
+        public int AppUserId { get; set; }
+        public virtual AppUser AppUser { get; set; }
     }
 }
