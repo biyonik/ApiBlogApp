@@ -19,6 +19,9 @@ namespace ApiBlogApp.BusinessLogic.Containers.Microsoft
 
             services.AddScoped<IBlogService, BlogManager>();
             services.AddScoped<IBlogDal, EfBlogDal>();
+            
+            services.AddScoped<ICategoryService, CategoryManager>();
+            services.AddScoped<ICategoryDal, EfCategoryDal>();
         }
     }
 }

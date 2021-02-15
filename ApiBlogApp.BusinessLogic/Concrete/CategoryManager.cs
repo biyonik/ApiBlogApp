@@ -15,7 +15,7 @@ namespace ApiBlogApp.BusinessLogic.Concrete
             _genericRepositoryDal = genericRepositoryDal;
         }
 
-        public async Task<List<Category>> GetAllSortedById()
+        public async Task<List<Category>> GetAllSortedByIdAsync()
         {
             return await _genericRepositoryDal.GetAllAsync(x => x.Id, null) as List<Category>;
         }

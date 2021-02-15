@@ -7,6 +7,6 @@ namespace ApiBlogApp.BusinessLogic.Abstract
 {
     public interface ICategoryService: IGenericService<Category>
     {
-        Task<List<Category>> GetAllSortedById();
+        Task<List<Category>> GetAllSortedByIdAsync();
     }
 }
