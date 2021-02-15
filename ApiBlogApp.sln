@@ -10,6 +10,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiBlogApp.WebAPI", "ApiBlo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiBlogApp.DataTransformationObjects", "ApiBlogApp.DataTransformationObjects\ApiBlogApp.DataTransformationObjects.csproj", "{55306E9F-30B8-40BF-8FD1-21944F52EF84}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiBlogApp.WebUI", "ApiBlogApp.WebUI\ApiBlogApp.WebUI.csproj", "{D84DF06C-3E32-4C55-A37B-1DC275268594}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,5 +37,9 @@ Global
 		{55306E9F-30B8-40BF-8FD1-21944F52EF84}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{55306E9F-30B8-40BF-8FD1-21944F52EF84}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{55306E9F-30B8-40BF-8FD1-21944F52EF84}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D84DF06C-3E32-4C55-A37B-1DC275268594}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D84DF06C-3E32-4C55-A37B-1DC275268594}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D84DF06C-3E32-4C55-A37B-1DC275268594}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D84DF06C-3E32-4C55-A37B-1DC275268594}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
